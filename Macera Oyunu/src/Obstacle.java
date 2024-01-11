@@ -5,6 +5,7 @@ public class Obstacle {
     private int health;
     private int award;
     private int orjHealth;
+    private String item;
 
     public Obstacle(int id, String name, int damage, int health, int award) {
         this.id = id;
@@ -13,6 +14,7 @@ public class Obstacle {
         this.health = health;
         this.orjHealth = health;
         this.award = award;
+        this.item = item;
     }
 
     public int getId() {
@@ -64,5 +66,13 @@ public class Obstacle {
 
     public void setOrjHealth(int orjHealth) {
         this.orjHealth = orjHealth;
+    }
+
+    public String getItem() {
+        return item;
+    }
+
+    public void setItem(String item) {
+        this.item = item;
     }
 }

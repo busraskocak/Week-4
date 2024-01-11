@@ -3,6 +3,7 @@ import java.util.Scanner;
 public abstract class Location {
     private Player player;
     String name;
+    private boolean isCleared;
     public static Scanner input = new Scanner(System.in);
 
     public Location(Player player, String name) {
@@ -28,5 +29,13 @@ public abstract class Location {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    private boolean isCleared() {
+        return isCleared;
+    }
+
+    public void setCleared(boolean cleared) {
+        isCleared = cleared;
     }
 }
